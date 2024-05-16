@@ -1,0 +1,104 @@
+/*Functions in JS
+//A block of codes that performs an particular task multiple times
+//Reduces redundancy
+1.Function Defination
+functionname(){
+    //parameters -> inputs
+    console.log(x);
+    //do some work
+}
+/*eg:
+function myfunction(msg){
+        //parameters -> inputs
+ console.log(msg);
+}
+myfunction("I love JS"); //argument
+/*
+functioon myfunction(){
+    console.log("Welcome to Kss");
+}
+myfunction();//prints once
+myfunction();//prints twice
+
+2.Function Call
+functionname();
+/*eg:
+myfunction("I love JS"); //argument
+
+//Arrow function
+Stored library of function methods used in JS for short program rather than longer
+eg:
+/*
+const/let(var)  functionName=()=>{
+    //console.log(..);//
+    //return ..;
+}
+*/
+
+/*
+const sum=(x,y)=>{
+    console.log(x+y);//output val + undefined(msg)
+    return x+y;//ouput val only
+};
+*/
+
+/*
+function checkvowels(str)
+{
+    let count = 0;
+    for (const char of str){
+        if (
+            char==="a" ||
+            char==="e" ||
+            char==="i" ||
+            char==="o" ||
+            char==="u"
+        )
+        {
+            count++;
+        }
+    }
+console.log(count);
+}
+*/
+
+//forEach Loop used for Arrays
+//It is method because it is bind with any objects
+//Callback is a function passed as an argument to another function
+//It is a function to execute tasks for each element in array
+//arr.forEach(callBackFunction)
+/*
+arr.forEach((val)=>{
+    console.log(val);
+});
+eg:
+let arr=[1,23,4,5];
+ arr.forEach(myfunction(val)=>
+{
+    console.log(val);
+})
+*/
+
+//Some more methods in Array
+1.Map
+//Creates a new array with result of some operation and that value its calllback return are used to form a new array from it
+//arr.map(callbackfunction(cal,idx,arr))
+eg:
+let nums=[1,2,3,4,5];
+let newarr = nums.map((val)=>{
+    return val*val;
+});
+console.log(newarr);
+
+2.Filter
+//It filter the values inside filter according to the given condition
+//arr.filter(callbackfunction(idx,val));
+eg:
+/*
+let nums=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,27,18,19,20,21,22,23,24,25,26,27,28,29,30];
+let vals=nums.filter((val)=>{
+    return val%2!==0;//for odd values
+    return val%2==0;//for even values
+});
+console.log(vals);
+*/
